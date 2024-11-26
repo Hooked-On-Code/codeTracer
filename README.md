@@ -3,7 +3,6 @@
 ## Table of Contents
 
 - [Introduction](#introduction)
-- [Demo](#demo)
 - [Prerequisites](#prerequisites)
 - [Setup Instructions](#setup-instructions)
   - [Server Setup](#server-setup)
@@ -25,10 +24,6 @@ The CodeTracer project is designed to trace code execution in a target process b
 - A Python Client that allows users to interact with the server to manage prefixes and retrieve tracing data.
 - A Frida Script (trace-server.js) that hooks into the target process, monitors network functions, and traces code execution when prefixes are detected.
 - Ghidra Scripts that process the tracing data and highlight code in Ghidra's listing and decompiled views.
-
-## Demo
-
-[Click here to watch the demo video](./Demo.mp4). Video shows the mode where you can start the process yourself instead of hooking an existing process. In this video, we hook main and then resume the program. Then from another terminal we send a packet to the program that we have hooked. The client then downloads the code tracing data and shows how it can be used in ghidra.
 
 ## Prerequisites
 
