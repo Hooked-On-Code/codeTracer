@@ -108,13 +108,23 @@ Once added, the scripts can be assigned to the toolbar and with shortcut
 
    ```log
    Available commands:
-    prefix add <prefix> Add a new prefix
-    prefix del <prefix> Delete an existing prefix
-    prefix list List all prefixes
-    prefix status <prefix> Check the status of a prefix
-    get <prefix> Retrieve data for a prefix
-    help or h Show this help message
-    exit or quit Exit the client
+    prefix add <prefix>                 Add a new prefix
+    prefix del <prefix>                 Delete an existing prefix
+    prefix list                         List all prefixes with user and timestamp
+    prefix status <prefix>              Check the status of a prefix
+    func add name <function_name>       Add a function to trace by name
+    func add addr <function_address>    Add a function to trace by address
+    func del name <function_name>       Remove a function from tracing by name
+    func del addr <function_address>    Remove a function from tracing by address
+    func show                           Show all traced functions with module info
+    func list                           List all functions in the target binary
+    func search <regex>                 Search functions matching the regex pattern
+    users list                          List all active users
+    get prefix <prefix>                 Retrieve data for a prefix
+    get func <function_identifier>      Retrieve data for a function
+    run                                 Start the target program
+    help or h                           Show this help message
+    exit or quit                        Exit the client
    ```
 
 4. Example Usage:
